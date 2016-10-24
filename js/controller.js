@@ -1,4 +1,4 @@
-ngular.module("myControllers",['myServices'])
+angular.module("myControllers",['myServices'])
 
 	.controller("createController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'create';

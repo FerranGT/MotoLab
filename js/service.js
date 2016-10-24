@@ -6,7 +6,7 @@ angular.module('myServices', [])
 			}
 
 			function getMotoModel() {
-				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/honda/vehicleType/moto?format=json");
+				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/" + $scope.idBrand + "/vehicleType/moto?format=json");
 			}
 
 			return {

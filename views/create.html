@@ -1,7 +1,14 @@
 <h1>Añadir anuncio:</h1>
 
-<input list="brands">
-<p>{{6+1}}<p>
-<datalist id="brands">
+<p>Marca<p>
+<input list="listBrands">
+<datalist id="listBrands">
+  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
+</datalist>
+
+
+<p>Modelo</p>
+<input list="listModels">
+<datalist id="listModels">
   <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
 </datalist>

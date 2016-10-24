@@ -1,12 +1,12 @@
 angular.module("myControllers",['myServices'])
 
-	.controller("createController", function($scope, $rootScope, motodbservice) {
-		$rootScope.activetab = 'create';
+	.controller("createController", function($scope, motodbservice) {
+		$scope.activetab = 'create';
 		$scope.findBrands = function() {
 			motodbservice.getMotoBrand()
 				.then( function(response) {
-					console.log(response);
-					$rootScope.brands = response.results;
+					$scope.brands = response.data.Results;
+					console.log($scope.brands);
 				})
 		}
 		$scope.findBrands();
@@ -15,7 +15,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.getMotoModel()
 				.then( function(response) {
 					console.log(response);
-					$rootScope.models = response.results;
+					$scope.models = response.results;
 				})
 		} 
 		$scope.findModels();

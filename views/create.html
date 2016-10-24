@@ -1,14 +1,19 @@
-<h1>Añadir anuncio:</h1>
+<div class="container">
+	<h1>Añadir anuncio:</h1>
+	<p>Marca<p>
+	<input ng-model="idBrand" ng-change="findModels()" list="listBrands">
+	<datalist id="listBrands">
+	  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
+	</datalist>
 
-<p>Marca<p>
-<input list="listBrands">
-<datalist id="listBrands">
-  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
-</datalist>
+
+	<p>Modelo</p>
+	<input list="listModels">
+	<datalist id="listModels">
+	  <option ng-repeat="model in models" value="{{ model.Model_Name}}">
+	</datalist>	
+
+</div>
 
 
-<p>Modelo</p>
-<input list="listModels">
-<datalist id="listModels">
-  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
-</datalist>
+

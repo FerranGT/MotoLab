@@ -9,6 +9,14 @@ ngular.module("myControllers",['myServices'])
 					$rootScope.Brands = response.results;
 				})
 		}
-		$scope.findBrands(); 
-
+		$scope.findBrands();
+		
+		$scope.findModels = function() {
+			motodbservice.getMotoModel()
+				.then( function(response) {
+					console.log(response);
+					$rootScope.Models = response.results;
+				})
+		} 
+		$scope.findModels();
 	})

@@ -1,11 +1,7 @@
 <h1>Añadir anuncio:</h1>
 
-<input list="browsers">
-
-<datalist id="browsers">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-  <option value="Chrome">
-  <option value="Opera">
-  <option value="Safari">
+<input list="brands">
+<p>{{6+1}}<p>
+<datalist id="brands">
+  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
 </datalist>

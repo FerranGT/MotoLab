@@ -6,7 +6,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.getMotoBrand()
 				.then( function(response) {
 					console.log(response);
-					$rootScope.Brands = response.results;
+					$rootScope.brands = response.results;
 				})
 		}
 		$scope.findBrands();
@@ -15,7 +15,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.getMotoModel()
 				.then( function(response) {
 					console.log(response);
-					$rootScope.Models = response.results;
+					$rootScope.models = response.results;
 				})
 		} 
 		$scope.findModels();

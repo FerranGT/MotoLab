@@ -15,7 +15,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.getMotoModel()
 				.then( function(response) {
 					console.log(response);
-					$rootScope.Models = response.results;
+					$rootScope.models = response.results;
 				})
 		} 
 		$scope.findModels();

@@ -20,3 +20,11 @@ angular.module("myControllers",['myServices'])
 		} 
 		$scope.findModels();
 	})
+
+	.controller("homeController'", function($scope, $rootScope, motodbservice) {
+
+	})
+
+	.controller("motoController'", function($scope, $rootScope, motodbservice) {
+
+	})

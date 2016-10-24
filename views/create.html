@@ -1,19 +1,44 @@
 <div class="container">
-	<h1>Añadir anuncio:</h1>
-	<p>Marca<p>
-	<input ng-model="idBrand" ng-change="findModels()" list="listBrands">
-	<datalist id="listBrands">
-	  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
-	</datalist>
+	<h1>Add motorcyle</h1>
+	<form action="" method="POST" class="form-inline" role="form">
+
+		<label for="input" class="control-label">Brands:</label>
+		<input  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()">
+		<datalist id="listBrands">
+		  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
+		</datalist>
 
 
-	<p>Modelo</p>
-	<input list="listModels">
-	<datalist id="listModels">
-	  <option ng-repeat="model in models" value="{{ model.Model_Name}}">
-	</datalist>	
+		<label for="input" class="control-label">Model:</label>
+		<input list="listModels">
+		<datalist id="listModels">
+		  <option ng-repeat="model in models" value="{{ model.Model_Name}}">
+		</datalist>	
+
+		<label for="input" class="control-label">Price:</label>
+		<input type="text">
+		
+		<label for="input" class="control-label">Description:</label>
+		<textarea name="textarea" rows="10" cols="100">Write description here</textarea>
+
+
+		<button type="submit" class="btn btn-primary">Create</button>
+	</form>
 
 </div>
+
+
+
+<!-- 	<form ng-submit="findModels($event)" action="" method="POST" class="form-inline" role="form">
+
+		<label for="input" class="control-label">Brands:</label>
+		<input  ng-model="idBrand" list="listBrands" placeholder="Input brand">
+
+		<datalist id="listBrands">
+		  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
+		</datalist>
+		<button type="submit" class="btn btn-primary">Search</button>
+	</form> -->
 
 
 

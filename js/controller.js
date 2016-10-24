@@ -11,9 +11,9 @@ angular.module("myControllers",['myServices'])
 		$scope.findBrands();
 		
 		$scope.findModels = function() {
-			motodbservice.getMotoModel()
+			console.log('loading models...');
+			motodbservice.getMotoModel($scope.idBrand)
 				.then( function(response) {
-					console.log(response);
 					$scope.models = response.data.Results;
 				})
 		} 

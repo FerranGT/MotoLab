@@ -7,7 +7,7 @@ angular.module("myApp", ['ngRoute', 'myControllers'])
 				})
 				.when('/create', {
 					templateUrl: 'views/create.html',
-					controller: 'createController'
+					controller: 'findbrandmodelController'
 				})
 				// .when('/', {
 				// 	templateUrl: 'views/motorbykes.html',

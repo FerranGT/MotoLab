@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>Add motorcyle</h1>
-	<form action="" method="POST" class="form-inline" role="form">
+	<form action="" method="POST" class="form-inline" role="form" ng-submit="createMoto($event)">
 
 		<label for="input" class="control-label">Brands:</label>
 		<input  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()">
@@ -32,7 +32,7 @@
 		<input type="text" ng-model="image">
 
 <br><br>	
-	
+
 		<label for="input" class="control-label">Description:</label>
 		<textarea mg-model="description" name="textarea" rows="10" cols="100"></textarea>
 

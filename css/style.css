@@ -22,8 +22,8 @@ a.logo  {
 
 
 div.header-img{
-	 	background-image: url(../img/header2.jpg);
-	 	height: 756px;
+	 	background-image: url(../img/header3.jpg);
+	 	height: 709px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;
 	 	background-size: cover;
@@ -38,10 +38,8 @@ div.header-img{
 
 
 div.main-img{
-		position: relative;
-		top: -250px;
-	 	background-image: url(../img/main.png);
-	 	height: 1124px;
+	 	background-image: url(../img/moto3.jpg);
+	 	height: 937px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;
 	 	background-size: cover;
@@ -84,7 +82,7 @@ div.main-img{
 /*Elements info main*/
 .info-elements{
 	position: relative;
-	top:280px;
+	top:60px;
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -104,16 +102,14 @@ div.main-img{
 
 /*New Arrivals*/
 
-.new-arrivals{
-	position: relative;
-	top: -220px;
-}
+
 
 .new-arrivals h2{
 	font-family: Lato;
 	font-weight: 900;
 	font-size: 25px;
 	text-transform: uppercase;
+	margin-top: 85px;
 	margin-bottom: 36px;
 }
 

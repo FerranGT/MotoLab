@@ -9,10 +9,10 @@ angular.module("myApp", ['ngRoute', 'myControllers'])
 					templateUrl: 'views/create.html',
 					controller: 'createController'
 				})
-				// .when('/', {
-				// 	templateUrl: 'views/motorbykes.html',
-				// 	controller: 'motoController'
-				// })
+				.when('/moto', {
+					templateUrl: 'views/motorbykes.html',
+					controller: 'motoController'
+				})
 				.otherwise({redirectTo: '/'});
 
 	})

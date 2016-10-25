@@ -8,21 +8,33 @@
 		  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}">
 		</datalist>
 
+<br><br>
 
 		<label for="input" class="control-label">Model:</label>
-		<input list="listModels">
+		<input list="listModels" ng-model="idModel">
 		<datalist id="listModels">
 		  <option ng-repeat="model in models" value="{{ model.Model_Name}}">
 		</datalist>	
 
+<br><br>
+
 		<label for="input" class="control-label">Price:</label>
-		<input type="text">
+		<input type="text" ng-model="price">
+
+<br><br>
 
 		<label for="input" class="control-label">Year:</label>
-		<input type="text">
-		
+		<input type="text" ng-model="year">
+
+<br><br>
+
+		<label for="input" class="control-label">Image:</label>
+		<input type="text" ng-model="image">
+
+<br><br>	
+	
 		<label for="input" class="control-label">Description:</label>
-		<textarea name="textarea" rows="10" cols="100">Write description here</textarea>
+		<textarea mg-model="description" name="textarea" rows="10" cols="100"></textarea>
 
 		<button type="submit" class="btn btn-primary">Create</button>
 	</form>

@@ -32,7 +32,7 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li ng-class="{ active: activetab == 'home'}"><a href="#/">Home</a></li>
-        <li ng-class="{ active: activetab == 'moto'}"><a href="#/moto">Motorbykes</a></li>
+        <li ng-class="{ active: activetab == 'moto'}"><a href="#/moto">Motorbikes</a></li>
         <li ng-class="{ active: activetab == 'create'}"><a href="#/create">Create</a></li>
     </ul>
     </div><!--/.nav-collapse -->
@@ -62,12 +62,32 @@
 
 
 
-<footer>
+<footer class="footer">
+      <div class="container">
 
-      <div class="footer">
-        
+        <div class="row">
+        <div class="col-xs-12 col-md-6">
+           <a class="logo" href="#">MOTO<span class="corporative-color">LAB</span></a>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+           <ul class="list-inline text-right">
+             <li ng-class="{ active: activetab == 'home'}"><a href="#/">Home</a></li>
+             <li ng-class="{ active: activetab == 'moto'}"><a href="#/moto">Motorbikes</a></li>
+             <li ng-class="{ active: activetab == 'create'}"><a href="#/create">Create</a></li>
+           </ul>
+        </div>
+
+
+        <div class="col-xs-12 col-md-6">
+          <p> Av. del President Companys, 15, 08911, Barcelona </p>
+          <p> <span class="glyphicon glyphicon-earphone icon-footer"></span>935 75 86 95 <span class="glyphicon glyphicon-envelope icon-footer-mail"></span> <a href="mailto:motolab@hello.com" class="mail"> motolab@hello.com </a></p>
+        </div>
+
+
+
+        </div>
       </div>
-
 </footer>
 
 

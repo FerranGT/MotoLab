@@ -18,9 +18,7 @@ angular.module("myControllers",['myServices'])
 					$scope.models = response.data.Results;
 				})
 		}
-	})
 
-	.controller("createMotoController'", function($scope, $rootScope, motocreateservice) {
 		$scope.createMoto = function() {
 			motocreateservice.pushMoto()
 				.then( function(response) {
@@ -28,6 +26,8 @@ angular.module("myControllers",['myServices'])
 				})
 		}
 	})
+
+
 
 	.controller("homeController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'home';

@@ -146,7 +146,31 @@ div.main-img{
 		}
  }
 
- @media (max-width: 600px) {
-  div.header-img {
+@media (max-width: 768px){
+	div.header-img{
+		background-image: none;
+		background-color: #141719;
+		height: auto;
+	}
+	
+	div.main-img{
+		background-image: none;
+		height: auto;
+		background-color: #dda828;
+		padding-top: 3 0px;
 
-  }
+	}
+	.glyphicon{
+	font-size: 40px;
+	color: white;
+	}
+
+	.info-elements h3{
+	 font-weight: 400;
+	}
+
+	.info-elements{
+		top: 0px;
+		margin-top: 35px;
+	}
+ }

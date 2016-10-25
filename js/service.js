@@ -9,19 +9,12 @@ angular.module('myServices', [])
 				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/" + idBrand + "/vehicleType/moto?format=json");
 			}
 
-			return {
-				getMotoBrand: getMotoBrand,
-				getMotoModel: getMotoModel
-			}
-	})
-
-	.factory("motocreateservice", function($http) {
-
 			function pushMoto() {
 				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/Moto?format=json");
 			}
 
 			return {
 				getMotoBrand: getMotoBrand,
+				getMotoModel: getMotoModel
 			}
 	})

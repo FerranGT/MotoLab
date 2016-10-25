@@ -22,7 +22,7 @@ a.logo  {
 
 
 div.header-img{
-	 	background-image: url(../img/header3.jpg);
+	 	background-image: url(../img/header_1920.jpg);
 	 	height: 709px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;
@@ -38,12 +38,13 @@ div.header-img{
 
 
 div.main-img{
-	 	background-image: url(../img/moto3.jpg);
+	 	background-image: url(../img/moto_1920.jpg);
 	 	height: 937px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;
 	 	background-size: cover;
 	 	margin-top: 0px;
+
 	}
 
 
@@ -129,10 +130,20 @@ div.main-img{
 }
 
 
+
+/*Footer*/
+
+.footer{
+	background-color: #131619;
+}
+
 @media (min-width: 768px){
 	.navbar{
 		border-radius: 0px;
 	}
+		.navbar-nav {
+			float:right;
+		}
  }
 
  @media (max-width: 600px) {

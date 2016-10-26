@@ -2,7 +2,6 @@ angular.module('myServices', ["firebase"])
 	.factory("motodbservice", function($http, $firebaseArray) {
 
 			var bikes = $firebaseArray ( new firebase.database().ref().child("bikes") )
-			console.log(bikes) ;
 
 
 			function getMotoBrand() {

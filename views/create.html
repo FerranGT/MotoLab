@@ -36,7 +36,6 @@
 			<input class="form-control" type="text" ng-model="price">
 		</div>
 
-
 	    <div class="col-md-4">
 			<label for="input" class="control-label">Year:</label>
 			<input class="form-control" type="text" ng-model="year">
@@ -44,8 +43,15 @@
 		
 		<div class="col-md-4">
 			<label for="input" class="control-label">Image:</label>
-			<input class="form-control" type="text" ng-model="image">
+			<input  type="file" ng-model="image" id="fileRoute">
+			<div id="progress-container"></div>
+			<br>
+			<div id="photo-container">
+				<img id="photoPreview" src="../img/avatar_moto.png">
+			</div>
 		</div>
+
+
 
 		<div class="col-md-12">
 			<label for="input" class="control-label">Description:</label>

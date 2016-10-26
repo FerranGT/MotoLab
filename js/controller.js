@@ -4,14 +4,14 @@ angular.module("myControllers",['myServices'])
 		$rootScope.activetab = 'create';
 		$rootScope.motosdb = motodbservice.bikes;
 
-		var authService = firebase.auth();
+		//var authService = firebase.auth();
     	var storageService = firebase.storage();
 		
 		// realizamos la autenticación anónima (debe estar activada en la consola de Firebase)
-		authService.signInAnonymously()
-		.catch(function(error) {
-			console.error('Detectado error de autenticación', error);
-		});
+		//authService.signInAnonymously()
+		// .catch(function(error) {
+		// 	console.error('Detectado error de autenticación', error);
+		// });
 		// asociamos el manejador de eventos sobre el INPUT FILE
 		document.getElementById('fileRoute').addEventListener('change', function(evento){
 			evento.preventDefault();

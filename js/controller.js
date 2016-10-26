@@ -3,7 +3,6 @@ angular.module("myControllers",['myServices'])
 	.controller("createController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'create';
 
-
 		$scope.findBrands = function() {
 			motodbservice.getMotoBrand()
 				.then( function(response) {
@@ -23,7 +22,9 @@ angular.module("myControllers",['myServices'])
 		$scope.createMoto = function(e) {
 			e.preventDefault();
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
-		}
+		}		
+
+
 
 		
 	})

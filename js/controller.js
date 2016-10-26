@@ -3,6 +3,21 @@ angular.module("myControllers",['myServices'])
 	.controller("createController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'create';
 
+		var authService = firebase.auth();
+    	var storageService = firebase.storage();
+		
+		// realizamos la autenticación anónima (debe estar activada en la consola de Firebase)
+		authService.signInAnonymously()
+		.catch(function(error) {
+			console.error('Detectado error de autenticación', error);
+		});
+		// asociamos el manejador de eventos sobre el INPUT FILE
+		document.getElementById('fileRoute').addEventListener('change', function(evento){
+			evento.preventDefault();
+			var archivo  = evento.target.files[0];
+			$scope.subirArchivo(archivo);
+		});
+	
 
 		$scope.findBrands = function() {
 			motodbservice.getMotoBrand()
@@ -25,6 +40,40 @@ angular.module("myControllers",['myServices'])
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}
 
+		// función que se encargará de subir el archivo
+		$scope.subirArchivo = function(archivo) {
+			// creo una referencia al lugar donde guardaremos el archivo
+			var refStorage = storageService.ref('bike_images').child(archivo.name);
+			// Comienzo la tarea de upload
+			var uploadTask = refStorage.put(archivo);
+
+			// defino un evento para saber qué pasa con ese upload iniciado
+			uploadTask.on('state_changed', 
+				function(snapshot){
+					var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+					$scope.updateProgress(percentage);
+				},
+				function(error){
+					console.log('Error al subir el archivo', error);
+				},
+				function(){
+					console.log('Subida completada');
+					$scope.image = uploadTask.snapshot.downloadURL;
+					$scope.showPreview($scope.image);
+				}
+			);
+	  	}
+	  	$scope.updateProgress = function (percentage) {
+		    	var pDiv = document.getElementById('progress-container');
+		    	var txtHtml = '<progress id="progressBar" value="'+percentage+'" max="100"></progress>';
+		    	pDiv.innerHTML = txtHtml;
+		}
+
+		$scope.showPreview = function (url) {
+		    	var pDiv = document.getElementById('photo-container');
+		    	var txtHtml = '<img width="100" id="photoPreview" src="'+url+'">';
+		    	pDiv.innerHTML = txtHtml;
+		}
 		
 	})
 

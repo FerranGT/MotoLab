@@ -2,6 +2,7 @@ angular.module("myControllers",['myServices'])
 
 	.controller("createController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'create';
+		$rootScope.motosdb = motodbservice.bikes;
 
 		var authService = firebase.auth();
     	var storageService = firebase.storage();
@@ -89,4 +90,5 @@ angular.module("myControllers",['myServices'])
 
 	.controller("motoController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'moto';
+		$rootScope.bikes = motodbservice.bikes;
 	})

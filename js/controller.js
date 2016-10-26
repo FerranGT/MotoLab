@@ -1,7 +1,6 @@
 angular.module("myControllers",['myServices'])
 
 	.controller("createController", function($scope, $rootScope, motodbservice) {
-		$rootScope.activetab = 'create';
 
 		var authService = firebase.auth();
     	var storageService = firebase.storage();
@@ -17,7 +16,10 @@ angular.module("myControllers",['myServices'])
 			var archivo  = evento.target.files[0];
 			$scope.subirArchivo(archivo);
 		});
-	
+
+		$rootScope.activetab = 'create';
+		$rootScope.motosdb = motodbservice.bikes;
+
 
 		$scope.findBrands = function() {
 			motodbservice.getMotoBrand()
@@ -39,6 +41,7 @@ angular.module("myControllers",['myServices'])
 			e.preventDefault();
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}
+
 
 		// función que se encargará de subir el archivo
 		$scope.subirArchivo = function(archivo) {
@@ -75,6 +78,7 @@ angular.module("myControllers",['myServices'])
 		    	pDiv.innerHTML = txtHtml;
 		}
 		
+
 	})
 
 
@@ -85,4 +89,5 @@ angular.module("myControllers",['myServices'])
 
 	.controller("motoController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'moto';
+		$scope.bikes =  motodbservice.bikes;
 	})

@@ -10,6 +10,8 @@
 }
 
 /*Nav bar*/
+
+
 .corporative-color{
 	color: #dda828;
 }
@@ -311,14 +313,14 @@ footer a:hover{
 	 	margin-top: 20px;
 	 }
 
-	 .btn {
+	 .botton_create {
 	 	background-color: #dda828;
 	 	margin-top: 20px;
 	 	color: white;
 	 	margin-bottom: 60px;
 	 }
 
-	 .btn:hover {
+	 .botton_create:hover {
 	 	background-color: #23272a;
 	 	margin-top: 20px;
 	 	color: white;
@@ -326,9 +328,10 @@ footer a:hover{
 
 
 
-
-
-
 	 #photoPreview{
 	 	width: 300px;
+	 }
+
+	 #progress-container{
+	 	padding-top: 10px;
 	 }

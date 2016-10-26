@@ -28,10 +28,18 @@ angular.module('myServices', ["firebase"])
 
 			}
 
+			function deleteMoto(motoobject){
+
+				bikes.$remove(motoobject);
+
+			}
+
+
 			return {
 				bikes: bikes,
 				getMotoBrand: getMotoBrand,
 				getMotoModel: getMotoModel,
-				pushMoto: pushMoto
+				pushMoto: pushMoto,
+				deleteMoto: deleteMoto
 			}
 	})

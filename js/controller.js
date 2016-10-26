@@ -14,7 +14,6 @@ angular.module("myControllers",['myServices'])
 		$scope.findBrands();
 		
 		$scope.findModels = function() {
-			console.log('loading models...');
 			motodbservice.getMotoModel($scope.idBrand)
 				.then( function(response) {
 					$scope.models = response.data.Results;
@@ -25,6 +24,13 @@ angular.module("myControllers",['myServices'])
 			e.preventDefault();
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}
+
+		$scope.removeMoto = function() {
+			//e.preventDefault();
+			motodbservice.deleteMoto($scope.motoobject)
+		}
+
+		$scope.removeMoto();
 
 	})
 

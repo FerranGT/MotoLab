@@ -38,6 +38,8 @@ angular.module("myControllers",['myServices'])
 		$scope.createMoto = function(e) {
 			e.preventDefault();
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description, $scope.kilometers)
+			window.location = "#/moto"
+
 		}
 
 		
@@ -90,7 +92,13 @@ angular.module("myControllers",['myServices'])
 		$rootScope.bikes = motodbservice.bikes;
 
 		$scope.removeMoto = function(motoObject) {
-			motodbservice.deleteMoto(motoObject)
+
+			var temp = angular.element( document.querySelector( '#'+motoObject.$id ) );
+			temp.modal('hide');
+			temp.on('hidden.bs.modal', function (e) {
+				motodbservice.deleteMoto(motoObject);
+			})				
+			//window.location.reload();		
 		}
 
 

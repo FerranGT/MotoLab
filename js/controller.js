@@ -24,7 +24,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}		
 
-
+		
 
 		
 	})

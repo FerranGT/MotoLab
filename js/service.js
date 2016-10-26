@@ -3,7 +3,7 @@ angular.module('myServices', ["firebase"])
 
 			var bikes = $firebaseArray ( new firebase.database().ref().child("bikes") )
 
-			
+
 			function getMotoBrand() {
 				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/Moto?format=json");
 			}

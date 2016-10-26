@@ -1,3 +1,10 @@
 
 
+
 <h1>{{ bikes }}</h1>
+<h1>{{ bikes.length }} motos disponibles</h1>
+<ul>
+	<li ng-repeat="bike in bikes">
+		<p>{{ bike. description }}</p>
+	</li>
+</ul>

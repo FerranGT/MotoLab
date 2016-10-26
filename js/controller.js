@@ -24,6 +24,8 @@ angular.module("myControllers",['myServices'])
 			e.preventDefault();
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}
+
+		
 	})
 
 

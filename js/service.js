@@ -1,12 +1,10 @@
-angular.module('myServices', [])
-	.factory("motodbservice", function($http) {
+angular.module('myServices', ["firebase"])
+	.factory("motodbservice", function($http, $firebaseArray) {
 
-			var motorbikes = [];
-				var lsMotorbikes = localStorage.getItem("motorbikes");
-				if ( lsMotorbikes ) {
-					motorbikes = JSON.parse(lsMotorbikes)
-				}
+			var bikes = $firebaseArray ( new firebase.database().ref().child("bikes") )
+			console.log(bikes) ;
 
+			
 			function getMotoBrand() {
 				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/Moto?format=json");
 			}
@@ -26,25 +24,12 @@ angular.module('myServices', [])
 					description:description,
 				};
 
-				
-				var numBikes = motorbikes.length;
-				var lastIdAvailable ;
+				bikes.$add(bike);
 
-				if (numBikes) {
-					lastIdAvailable = motorbikes[numBikes-1].id + 1;
-				}
-				else {
-					lastIdAvailable	= 1;
-				}
-
-				bike.id = lastIdAvailable;
-				motorbikes.push(bike);
-				var jsonBikes = JSON.stringify(motorbikes);
-				localStorage.setItem("motorbikes", jsonBikes);
-				console.log(localStorage.getItem("motorbikes"));
 			}
 
 			return {
+				bikes: bikes,
 				getMotoBrand: getMotoBrand,
 				getMotoModel: getMotoModel,
 				pushMoto: pushMoto

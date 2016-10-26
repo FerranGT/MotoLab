@@ -40,10 +40,7 @@ angular.module("myControllers",['myServices'])
 			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
 		}
 
-		$scope.removeMoto = function() {
-			//e.preventDefault();
-			motodbservice.deleteMoto($scope.motoobject)
-		}
+		
 
 		// función que se encargará de subir el archivo
 		$scope.subirArchivo = function(archivo) {
@@ -91,4 +88,11 @@ angular.module("myControllers",['myServices'])
 	.controller("motoController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'moto';
 		$rootScope.bikes = motodbservice.bikes;
+
+		$scope.removeMoto = function(motoObject) {
+			motodbservice.deleteMoto(motoObject)
+		}
+
+
+
 	})

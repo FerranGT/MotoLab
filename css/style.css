@@ -11,8 +11,13 @@
 
 body {
  padding-top: 50px; 
+ margin-bottom: 300px;
 }
 
+html {
+	position: relative;
+	min-height: 100%;
+}
 /*Nav bar*/
 
 
@@ -152,6 +157,9 @@ div.main-img{
 	background-color: #141719;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%
 }
 
 .mail{

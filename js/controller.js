@@ -37,7 +37,7 @@ angular.module("myControllers",['myServices'])
 
 		$scope.createMoto = function(e) {
 			e.preventDefault();
-			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description)
+			motodbservice.pushMoto($scope.idBrand, $scope.idModel, $scope.price, $scope.year, $scope.image, $scope.description, $scope.kilometers)
 		}
 
 		

@@ -12,7 +12,7 @@ angular.module('myServices', ["firebase"])
 				return $http.get("https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/" + idBrand + "/vehicleType/moto?format=json");
 			}
 
-			function pushMoto(idBrand,idModel,price,year,image,description) {
+			function pushMoto(idBrand,idModel,price,year,image,description,kilometers) {
 
 				var bike = {
 					brand:idBrand,
@@ -21,16 +21,25 @@ angular.module('myServices', ["firebase"])
 					year:year,
 					url_img:image,
 					description:description,
+					km:kilometers 
 				};
 
 				bikes.$add(bike);
 
 			}
 
+			function deleteMoto(motoobject){
+
+				bikes.$remove(motoobject);
+
+			}
+
+
 			return {
 				bikes: bikes,
 				getMotoBrand: getMotoBrand,
 				getMotoModel: getMotoModel,
-				pushMoto: pushMoto
+				pushMoto: pushMoto,
+				deleteMoto: deleteMoto
 			}
 	})

@@ -1,14 +1,15 @@
 
 
 
-<h1>{{ bikes }}</h1>
 <h1>{{ bikes.length }} motos disponibles</h1>
-<ul>
-	<li ng-repeat="bike in bikes">
+
+<div ng-repeat="bike in bikes">
+
 		<p>{{ bike.brand }}</p>
 		<p>{{ bike.model }}</p>
 		<p>{{ bike.price }}</p>
 		<p>{{ bike.year }}</p>
 		<p>{{ bike.description }}</p>
-	</li>
-</ul>
+
+		<button ng-click="removeMoto(bike)">Delete</button>
+</div> 

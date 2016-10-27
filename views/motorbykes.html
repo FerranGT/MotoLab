@@ -1,54 +1,95 @@
 
-<div class="create">
-    	<div class="container">
-    		<h1> {{ bikes.length }} motos disponibles</h1>
-    	</div>
+<div class="create motos_count">
+	<div class="container">
+		<h1> {{ bikes.length }} motos disponibles</h1>
 	</div>
+</div>
 
 <div class="container">
+	<form action="" method="POST" class="form-inline filter_bikes" role="form">
+
+		<div class="form-group">
+			<label for="">Marca</label>
+			<input ng-model="queryBrand" type="text" class="form-control" id="" placeholder="Filtrar por marca...">
+		</div>
+
+		<div class="form-group">
+			<label for="">Modelo</label>
+			<input ng-model="queryModel" type="text" class="form-control" id="" placeholder="Filtrar por modelo...">
+		</div>
+	</form>
+</div>
+
+
+<div class="container">
+
+<div class="row">
 	
-	<div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes">
+	<div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }">
 		
 		<div class="image_moto">
 			<img src="{{ bike.url_img }}" class="image_size img-responsive">
 		</div>
-		<h4>{{ bike.model }}</h4>
+		<h4>{{ bike.brand }} {{ bike.model }}</h4>
 		<h5>{{ bike.price }}</h5>
 		
 
 
-<!-- <button ng-click="removeMoto(bike)">Delete</button> -->
+		<!-- <button ng-click="removeMoto(bike)">Delete</button> -->
 
 
 		<!-- Button trigger modal -->
 		<button type="button" class="btn btn-primary btn-lg button_info" data-toggle="modal" data-target="#{{bike.$id}}">
-			info
+			Más info
 		</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="{{bike.$id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
+
+
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="myModalLabel">{{ bike.brand }} {{ bike.model }}</h4>
 					</div>
+
+
 					<div class="modal-body">
-						<img width ="400" src="{{ bike.url_img }}">
-						<p>Price: {{ bike.price }}</p>
-						<p>Year: {{ bike.year }}</p>
-						<p>Kms: {{ bike.km }}</p>
-						<p>Description: {{ bike.description }}</p>
+						<img src="{{ bike.url_img }}">
+						<div class="row">
+
+							<div class="col-md-4">	
+								<h6>Price:</h6>
+								<p>{{ bike.price }}</p>
+							</div>
+							<div class="col-md-4">	
+								<h6>Year:</h6>
+								<p>{{ bike.year }}</p>
+							</div>	
+							<div class="col-md-4">	
+								<h6>Kms:</h6>
+								<p>{{ bike.km }}</p>
+							</div>	
+							<div class="col-md-12">	
+								<h6>Description:</h6>
+								<p>{{ bike.description }}</p>
+							</div>	
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary" ng-click="removeMoto(bike)">Delete</button>
+						<button type="button" class="btn btn-primary delete_button" ng-click="removeMoto(bike)">Delete</button>
 					</div>
+
 				</div>
 			</div>
-		</div> 
+		</div>
+	</div> 
 
-	</div> 	
+</div> 	
+
+</div>
 </div>
 
 

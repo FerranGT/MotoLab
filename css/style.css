@@ -9,7 +9,18 @@
 	font-family: Lato;
 }
 
+body {
+ padding-top: 50px; 
+ margin-bottom: 300px;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
 /*Nav bar*/
+
+
 .corporative-color{
 	color: #dda828;
 }
@@ -146,6 +157,9 @@ div.main-img{
 	background-color: #141719;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%
 }
 
 .mail{
@@ -311,14 +325,14 @@ footer a:hover{
 	 	margin-top: 20px;
 	 }
 
-	 .btn {
+	 .botton_create {
 	 	background-color: #dda828;
 	 	margin-top: 20px;
 	 	color: white;
 	 	margin-bottom: 60px;
 	 }
 
-	 .btn:hover {
+	 .botton_create:hover {
 	 	background-color: #23272a;
 	 	margin-top: 20px;
 	 	color: white;
@@ -326,9 +340,10 @@ footer a:hover{
 
 
 
-
-
-
 	 #photoPreview{
 	 	width: 300px;
+	 }
+
+	 #progress-container{
+	 	padding-top: 10px;
 	 }

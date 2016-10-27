@@ -1,69 +1,89 @@
 
-    <div class="create">
-    	<div class="container">
-    		<h1> <span class="glyphicon glyphicon-pencil icon_create"></span> Add motorcyle</h1>
-    	</div>
+<div class="create">
+	<div class="container">
+		<h1> <span class="glyphicon glyphicon-pencil icon_create"></span> Add motorcyle</h1>
 	</div>
+</div>
 
 
 <div class="container">
-<div class="row">
+	<div class="row">
 
 
 
-	<form action="" method="POST" class="form-grup" role="form" ng-submit="createMoto($event)">
+		<form action="" method="POST" class="form-grup" role="form" ng-submit="createMoto($event)">
 
-	<div class="form-group">
+			<div class="form-group">
 
-		<div class="col-md-4">
-			<label for="input" class="control-label">Brands:</label>
-			<input class="form-control"  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()">
-			<datalist id="listBrands">
-			  <option ng-repeat="brand in brands" value="{{ brand.MakeName}}"></option>
-			</datalist>
+				<div class="col-md-8">
 
-			
-			<label for="input" class="control-label">Model:</label>
-			<input class="form-control" list="listModels" ng-model="idModel">
-			<datalist id="listModels">
-			  <option ng-repeat="model in models" value="{{ model.Model_Name}}"></option>
-			</datalist>	
+					<div class="row">
 
-			<label for="input" class="control-label">Price:</label>
-			<input class="form-control" type="text" ng-model="price">
+						<div class="col-md-6">
 
-			<label for="input" class="control-label">Year:</label>
-			<input class="form-control" type="text" ng-model="year">	
+							<label for="input" class="control-label">Brands:</label>
+							<input class="form-control"  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()">
+							<datalist id="listBrands">
+								<option ng-repeat="brand in brands" value="{{ brand.MakeName}}"></option>
+							</datalist>
+						</div>
 
-			<label for="input" class="control-label">Kilometers:</label>
-			<input class="form-control" type="text" ng-model="kilometers">	
+						<div class="col-md-6">
+							<label for="input" class="control-label">Model:</label>
+							<input class="form-control" list="listModels" ng-model="idModel">
+							<datalist id="listModels">
+								<option ng-repeat="model in models" value="{{ model.Model_Name}}"></option>
+							</datalist>	
+						</div>
 
-		</div>
 
-		<div class="col-md-4">
-		<label for="input" class="control-label">Description:</label>
-			<textarea class="form-control" ng-model="description" name="textarea" rows="10" cols="100"></textarea>
-        </div>
-		
-		
-		<div class="col-md-4">
-			<label for="input" class="control-label">Image:</label>
-			<input  type="file" ng-model="image" id="fileRoute">
-			<div id="progress-container"></div>
-			<br>
-			<div id="photo-container">
-				<img id="photoPreview" src="../img/avatar_moto.png">
+						<div class="col-md-4">
+							<label for="input" class="control-label">Price:</label>
+							<input class="form-control" type="text" ng-model="price">
+						</div>
+
+						<div class="col-md-4">
+							<label for="input" class="control-label">Year:</label>
+							<input class="form-control" type="text" ng-model="year">
+						</div>	
+
+						<div class="col-md-4">
+							<label for="input" class="control-label">Kilometers:</label>
+							<input class="form-control" type="text" ng-model="kilometers">	
+						</div>
+
+
+						<div class="col-md-12">
+							<label for="input" class="control-label">Description:</label>
+							<textarea class="form-control" ng-model="description" name="textarea" rows="8" cols="100"></textarea>
+						</div>
+
+						
+					</div>
+
+				</div>
+
 			</div>
-		</div>
 
-		
-		<div class="col-md-2">
-		<button type="submit" class="btn">Create</button>
-		</div>
-		</div>
+			<div class="col-md-4">
+				<label for="input" class="control-label">Image:</label>
+				<div id="photo-container">
+					<img id="photoPreview" src="../img/avatar_moto.png">
+				</div>
+				<br>
 
-	</form>
-</div>	
+				<input type="file" ng-model="image" id="fileRoute">
+				<div id="progress-container"></div>
+				
+			</div>
+			<div class="col-md-2">
+				<button type="submit" class="btn botton_create">Create</button>
+			</div>
+
+
+
+		</form>
+	</div>	
 
 </div>
 

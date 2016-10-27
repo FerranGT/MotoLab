@@ -437,3 +437,6 @@ footer a:hover{
 	border: 2px solid white;
 }
 
+#prova{
+	display: inline-block;
+}

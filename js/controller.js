@@ -77,6 +77,8 @@ angular.module("myControllers",['myServices'])
 		    	var pDiv = document.getElementById('photo-container');
 		    	var txtHtml = '<img id="photoPreview" src="'+url+'">';
 		    	pDiv.innerHTML = txtHtml;
+		    	var pDiv = document.getElementById('progress-container');
+		    	pDiv.innerHTML = ""
 		}
 		
 	})

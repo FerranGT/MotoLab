@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900');
 
-/**{
-	border: 1px solid red;
-}*/
+
 
 *{
 	font-family: Lato;
@@ -19,7 +17,6 @@ html {
 	min-height: 100%;
 }
 /*Nav bar*/
-
 
 .corporative-color{
 	color: #dda828;
@@ -42,7 +39,8 @@ a.logo  {
 }
 
 
-/*Home*/
+/*Home.html*/
+
 div.header-img{
 	 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fheader2_1920x534px.png?alt=media&token=01a939b7-99be-4583-8f57-a88d63a9598f");
 	 	height: 534px;
@@ -157,6 +155,7 @@ div.main-img{
 	background-color: #141719;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	margin-top: 60px;
 	position: absolute;
 	bottom: 0;
 	width: 100%
@@ -235,7 +234,65 @@ footer a:hover{
   	color: #6d6d6d;
   }
 
-/*Responsive home*/
+
+
+ /*Pag create.html*/
+
+ 	.create{
+ 		background-color: #dda828;
+ 	}
+
+	.create h1{
+		font-family: Lato;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 400;
+		padding-top: 20px; 
+		padding-bottom: 20px; 
+		margin: 0px;
+		color: white;
+	}
+	
+	.icon_create{
+		color: white;
+		font-size: 20px;
+		padding-right: 5px;
+
+	}
+
+	 form label{
+	 	font-family: Lato;
+	 	font-size: 16px;
+	 	font-weight: 400;
+	 	margin-bottom: 10px;
+	 	margin-top: 20px;
+	 }
+
+	 .botton_create {
+	 	background-color: #dda828;
+	 	margin-top: 20px;
+	 	color: white;
+	 	margin-bottom: 60px;
+	 }
+
+	 .botton_create:hover {
+	 	background-color: #23272a;
+	 	margin-top: 20px;
+	 	color: white;
+	 }
+
+
+
+	 #photoPreview{
+	 	width: 300px;
+	 }
+
+	 #progress-container{
+	 	padding-top: 10px;
+	 }
+
+
+/*Responsive*/
 
 @media (min-width: 768px){
 	.navbar{
@@ -293,57 +350,61 @@ footer a:hover{
 
 
 
- /*Pag create*/
 
- 	.create{
- 		background-color: #dda828;
- 	}
 
-	.create h1{
-		font-family: Lato;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: 400;
-		padding-top: 20px; 
-		padding-bottom: 20px; 
-		margin: 0px;
-		color: white;
-	}
-	
-	.icon_create{
-		color: white;
-		font-size: 20px;
-		padding-right: 5px;
 
-	}
+.image_moto{
+	height: 170px;
+	margin-top: 60px;
+	padding: 5px;
+	border:1px solid #d7d7d7;
+}
 
-	 form label{
-	 	font-family: Lato;
-	 	font-size: 16px;
-	 	font-weight: 400;
-	 	margin-bottom: 10px;
-	 	margin-top: 20px;
-	 }
+.image_size{
 
-	 .botton_create {
-	 	background-color: #dda828;
-	 	margin-top: 20px;
-	 	color: white;
-	 	margin-bottom: 60px;
-	 }
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    min-width: 100%;
 
-	 .botton_create:hover {
+}
+
+.show_moto h4{
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.show_moto h5{
+	color: #dda828;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 28px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+
+}
+
+.button_info{
+	background-color: #dda828;
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.button_info:hover {
 	 	background-color: #23272a;
-	 	margin-top: 20px;
 	 	color: white;
 	 }
 
-
-
-	 #photoPreview{
-	 	width: 300px;
-	 }
-
+<<<<<<< HEAD
 	 #progress-container{
 	 	padding-top: 10px;
 	 }
@@ -357,3 +418,12 @@ footer a:hover{
 
 
 
+=======
+.btn-primary{
+	border: none;
+}
+
+.btn-primary:focus, .btn-primary.focus{
+	background-color: #dda828;
+}
+>>>>>>> d1952371ea9a0b092fe280f983feded234dd9fb3

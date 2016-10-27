@@ -23,18 +23,18 @@
 
 <div class="container">
 
-<div class="row">
+<div id="bike-container">
+<!-- <div class="row"> -->
 	
-	<div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }">
+	<!-- <div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }"> -->
+	<div class="show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }">
 		
 		<div class="image_moto" >
 			<img src="{{ bike.url_img }}" class="image_size img-responsive">
 		</div>
 
-		
-		<h3>{{ bike.brand }}</h3>
-		<h4> {{ bike.model }}</h4>
-		<h5>{{ bike.price }}</h5>
+		<h4>{{ bike.brand }} {{ bike.model }}</h4>
+		<h5>{{ bike.price }} €</h5>
 		
 
 

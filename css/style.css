@@ -293,87 +293,26 @@ footer a:hover{
 	 }
 
 
-/*Responsive*/
 
-
-
-@media (min-width: 768px){
-	.navbar{
-		border-radius: 0px;
-	}
-		.navbar-nav {
-			float:right;
-		}
- }
-
- 
-
-@media (max-width: 768px){
-	div.header-img{
-		background-image: none;
-		background-color: #141719;
-		height: auto;
-	    }
-	
-	div.main-img{
-		background-image: none;
-		height: auto;
-		background-color: #dda828;
-		padding-top: 3 0px;
-	    }
-
-	.glyphicon{
-		font-size: 20px;
-		color: white;
-		}
-
-	.info-elements h3{
-		 font-weight: 400;
-		}
-
-	.info-elements{
-		top: 0px;
-		margin-top: 35px;
-		}
-
-	.footer{
-		text-align: center;
-		}	
-
-	.icon-footer, .icon-footer-mail{
-		color: #dda828;
-		font-size: 15px;
-		padding-right: 10px;
-		}	
-
-	.footer ul{
-		text-align: center;
-		margin-top: 20px;
-		margin-top: 15px;
-	}
-
-	.image_moto{
-		height: 400px !important;
-	}
-
-	.create{
- 		margin-top: 70px;
- 	}
- }
-
- @media (max-width: 500px){
-	.image_moto{
-		height: 230px !important;
-	}
- }
 
 
 .motos_count{
 	margin-bottom: 50px;
 }
 
-.show_moto{
+/*.show_moto{
 	margin-bottom: 70px;
+}
+*/
+.show_moto {
+    margin-bottom: 40px;
+    width: 22%;
+    margin-right: 25px;
+}
+
+#bike-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .image_moto{
@@ -383,21 +322,12 @@ footer a:hover{
 }
 
 .image_size{
-
     display: block;
     height: 100%;
     object-fit: cover;
     min-width: 100%;
-
 }
 
-.show_moto h3{
-	font-family: Lato;
-	font-weight: 700;
-	font-size: 18px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
 
 .show_moto h4{
 	font-family: Lato;
@@ -405,7 +335,7 @@ footer a:hover{
 	font-size: 16px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 .show_moto h5{
@@ -517,3 +447,90 @@ footer a:hover{
 	width: 30px;
 }
 
+
+
+
+/*Responsive*/
+
+
+
+@media (min-width: 768px){
+	.navbar{
+		border-radius: 0px;
+	}
+		.navbar-nav {
+			float:right;
+		}
+ }
+
+ 
+
+@media (max-width: 768px){
+	div.header-img{
+		background-image: none;
+		background-color: #141719;
+		height: auto;
+	    }
+	
+	div.main-img{
+		background-image: none;
+		height: auto;
+		background-color: #dda828;
+		padding-top: 3 0px;
+	    }
+
+	.glyphicon{
+		font-size: 20px;
+		color: white;
+		}
+
+	.info-elements h3{
+		 font-weight: 400;
+		}
+
+	.info-elements{
+		top: 0px;
+		margin-top: 35px;
+		}
+
+	.footer{
+		text-align: center;
+		}	
+
+	.icon-footer, .icon-footer-mail{
+		color: #dda828;
+		font-size: 15px;
+		padding-right: 10px;
+		}	
+
+	.footer ul{
+		text-align: center;
+		margin-top: 20px;
+		margin-top: 15px;
+	}
+
+	.image_moto{
+		height: 500px !important;
+	}
+
+	.create{
+ 		margin-top: 70px;
+ 	}
+
+ 	#bike-container{
+ 		flex-direction: column;
+ 	}
+
+ 	.show_moto {
+	    margin-bottom: 40px;
+	    width: 100%;
+	    margin-right: 25px;
+}
+ }
+
+ @media (max-width: 500px){
+	.image_moto{
+		height: 230px !important;
+	}
+
+ }

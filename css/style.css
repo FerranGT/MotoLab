@@ -368,8 +368,22 @@ footer a:hover{
 	margin-bottom: 50px;
 }
 
-.show_moto{
+/*.show_moto{
 	margin-bottom: 70px;
+}
+*/
+.show_moto {
+    margin-bottom: 25px;
+    width: 20%;
+    margin-right: 25px;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    padding: 5px;
+}
+
+#bike-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .image_moto{

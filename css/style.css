@@ -295,10 +295,7 @@ footer a:hover{
 
 /*Responsive*/
 
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
+
 
 @media (min-width: 768px){
 	.navbar{
@@ -308,6 +305,8 @@ footer a:hover{
 			float:right;
 		}
  }
+
+ 
 
 @media (max-width: 768px){
 	div.header-img{

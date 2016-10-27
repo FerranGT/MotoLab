@@ -44,7 +44,7 @@ a.logo  {
 
 /*Home*/
 div.header-img{
-	 	background-image: url(../img/header2_1920x534px.png);
+	 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fheader2_1920x534px.png?alt=media&token=01a939b7-99be-4583-8f57-a88d63a9598f");
 	 	height: 534px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;
@@ -60,7 +60,7 @@ div.header-img{
 
 
 div.main-img{
-	 	background-image: url(../img/moto_1920x1032px.jpg);
+	 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fmoto_1920x1032px.jpg?alt=media&token=b173e184-43b6-44f2-a38e-0bbd296c517c");
 	 	height: 1032px;
 	 	background-repeat: no-repeat;
 	 	background-position: center center;

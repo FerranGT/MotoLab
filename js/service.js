@@ -43,3 +43,43 @@ angular.module('myServices', ["firebase"])
 				deleteMoto: deleteMoto
 			}
 	})
+
+	.factory("AuthService", function( $http, $firebaseAuth, $rootScope ) {
+
+	    var Auth = $firebaseAuth();
+
+	    Auth.$onAuthStateChanged(function(authData) {
+	      if (authData) {
+	        $rootScope.$broadcast("authEvent", {
+	          name: authData.displayName,
+	          avatar: authData.photoURL,
+	          email: authData.email
+	        });
+	      }
+	      else {
+	        $rootScope.$broadcast("authEvent", null)
+	      }
+	    });
+
+	    function logIn() {
+	      if ( Auth.$getAuth() === null ) {
+	        Auth.$signInWithPopup("google")
+	      }
+	    }
+
+	    function logOut() {
+	      Auth.$signOut();
+	    }
+
+	    return {
+	      logIn: logIn,
+	      logOut: logOut
+	    }
+
+	  })
+
+
+
+
+
+	

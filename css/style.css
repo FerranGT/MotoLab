@@ -332,7 +332,7 @@ footer a:hover{
 .show_moto h4{
 	font-family: Lato;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 15px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	margin-top: 15px;
@@ -345,6 +345,15 @@ footer a:hover{
 	font-size: 25px;
 	margin-bottom: 10px;
 	margin-top: 5px;
+}
+
+.show_moto span{
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 17px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 15px;
 }
 
 

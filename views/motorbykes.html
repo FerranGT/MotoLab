@@ -30,7 +30,10 @@
 		<div class="image_moto" >
 			<img src="{{ bike.url_img }}" class="image_size img-responsive">
 		</div>
-		<h4>{{ bike.brand }} {{ bike.model }}</h4>
+
+		
+		<h3>{{ bike.brand }}</h3>
+		<h4> {{ bike.model }}</h4>
 		<h5>{{ bike.price }}</h5>
 		
 
@@ -42,6 +45,8 @@
 		<button type="button" class="btn btn-primary btn-lg button_info" data-toggle="modal" data-target="#{{bike.$id}}">
 			Más info
 		</button>
+
+
 
 		<!-- Modal -->
 		<div class="modal fade" id="{{bike.$id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

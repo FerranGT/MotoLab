@@ -323,7 +323,7 @@ footer a:hover{
 	    }
 
 	.glyphicon{
-		font-size: 40px;
+		font-size: 20px;
 		color: white;
 		}
 
@@ -355,6 +355,10 @@ footer a:hover{
 	.image_moto{
 		height: 400px !important;
 	}
+
+	.create{
+ 		margin-top: 70px;
+ 	}
  }
 
  @media (max-width: 500px){
@@ -387,19 +391,28 @@ footer a:hover{
 
 }
 
-.show_moto h4{
+.show_moto h3{
 	font-family: Lato;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 18px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 
+.show_moto h4{
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 5px;
+}
+
 .show_moto h5{
 	color: #dda828;
 	font-family: Lato;
-	font-weight: 300;
-	font-size: 28px;
+	font-weight: 400;
+	font-size: 25px;
 	margin-bottom: 10px;
 	margin-top: 5px;
 }

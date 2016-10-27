@@ -1,18 +1,28 @@
 
+<div class="create">
+    	<div class="container">
+    		<h1> {{ bikes.length }} motos disponibles</h1>
+    	</div>
+	</div>
+
 <div class="container">
-	<h1>{{ bikes.length }} motos disponibles</h1>
-	<div ng-repeat="bike in bikes">
 	
-		<img width ="100" src="{{ bike.url_img }}">
-		<p>{{ bike.model }}</p>
-		<p>{{ bike.price }}</p>
+	<div class="col-sm-6 col-md-3 show_moto text-center" ng-repeat="bike in bikes">
+		
+		<div class="image_moto">
+			<img src="{{ bike.url_img }}" class="image_size img-responsive">
+		</div>
+		<h4>{{ bike.model }}</h4>
+		<h5>{{ bike.price }}</h5>
+		<!-- <p>{{ bike.model }}</p>
+		<p>{{ bike.price }}</p> -->
 
 
 <!-- 		<button ng-click="removeMoto(bike)">Delete</button> -->
 
 
 		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{{bike.$id}}">
+		<button type="button" class="btn btn-primary btn-lg button_info" data-toggle="modal" data-target="#{{bike.$id}}">
 			info
 		</button>
 

@@ -14,7 +14,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<label for="input" class="control-label">Brands:</label>
-							<input class="form-control"  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()">
+							<input class="form-control"  ng-model="idBrand" list="listBrands" placeholder="Input brand" ng-change="findModels()" required>
 							<datalist id="listBrands">
 								<option ng-repeat="brand in brands" value="{{ brand.MakeName}}"></option>
 							</datalist>
@@ -22,7 +22,7 @@
 
 						<div class="col-md-6">
 							<label for="input" class="control-label">Model:</label>
-							<input class="form-control" list="listModels" ng-model="idModel">
+							<input class="form-control" list="listModels" ng-model="idModel" required>
 							<datalist id="listModels">
 								<option ng-repeat="model in models" value="{{ model.Model_Name}}"></option>
 							</datalist>	
@@ -31,23 +31,23 @@
 
 						<div class="col-md-4">
 							<label for="input" class="control-label">Price:</label>
-							<input class="form-control" type="text" ng-model="price">
+							<input class="form-control" type="text" ng-model="price" required>
 						</div>
 
 						<div class="col-md-4">
 							<label for="input" class="control-label">Year:</label>
-							<input class="form-control" type="text" ng-model="year">
+							<input class="form-control" type="text" ng-model="year" required>
 						</div>	
 
 						<div class="col-md-4">
 							<label for="input" class="control-label">Kilometers:</label>
-							<input class="form-control" type="text" ng-model="kilometers">	
+							<input class="form-control" type="text" ng-model="kilometers" required> 	
 						</div>
 
 
 						<div class="col-md-12">
 							<label for="input" class="control-label">Description:</label>
-							<textarea class="form-control" ng-model="description" name="textarea" rows="8" cols="100"></textarea>
+							<textarea class="form-control" ng-model="description" name="textarea" rows="8" cols="100" required></textarea>
 						</div>
 					</div>
 				</div>
@@ -60,11 +60,11 @@
 				</div>
 				<br>
 
-				<input type="file" ng-model="image" id="fileRoute">
+				<input type="file" ng-model="image" id="fileRoute" required>
 				<div id="progress-container"></div>
 				
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-12">
 				<button type="submit" class="btn botton_create">Create</button>
 			</div>
 

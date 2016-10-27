@@ -240,6 +240,7 @@ footer a:hover{
 
  	.create{
  		background-color: #dda828;
+
  	}
 
 	.create h1{
@@ -294,6 +295,8 @@ footer a:hover{
 
 /*Responsive*/
 
+
+
 @media (min-width: 768px){
 	.navbar{
 		border-radius: 0px;
@@ -302,6 +305,8 @@ footer a:hover{
 			float:right;
 		}
  }
+
+ 
 
 @media (max-width: 768px){
 	div.header-img{
@@ -359,13 +364,30 @@ footer a:hover{
  }
 
 
+.motos_count{
+	margin-bottom: 50px;
+}
 
+/*.show_moto{
+	margin-bottom: 70px;
+}
+*/
+.show_moto {
+    margin-bottom: 25px;
+    width: 20%;
+    margin-right: 25px;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    padding: 5px;
+}
 
-
+#bike-container {
+	display: flex;
+	flex-wrap: wrap;
+}
 
 .image_moto{
 	height: 170px;
-	margin-top: 60px;
 	padding: 5px;
 	border:1px solid #d7d7d7;
 }
@@ -394,8 +416,10 @@ footer a:hover{
 	font-size: 28px;
 	margin-bottom: 10px;
 	margin-top: 5px;
-
 }
+
+
+
 
 .button_info{
 	background-color: #dda828;
@@ -412,17 +436,24 @@ footer a:hover{
 .button_info:hover {
 	 	background-color: #23272a;
 	 	color: white;
-	 }
+ }
 
-	 #progress-container{
-	 	padding-top: 10px;
-	 }
 
-	 #loginbutton{
+
+/*Login button*/
+#progress-container{
+	padding-top: 10px;
+	}
+
+#loginbutton{
 	 	background: transparent;
 	 	color: #dda828;
 	 	border: none;
 	 }
+
+
+
+/*All buttons*/
 
 .btn-primary{
 	border: none;
@@ -432,9 +463,59 @@ footer a:hover{
 	background-color: #dda828;
 }
 
+
+/*modal window*/
+
+.modal-header{
+	background-color: #23272a;
+	color: white;
+}
+
+.modal-body{
+	padding: 40px;
+}
+
+.modal-body img{
+	width: 500px;
+	padding: 5px;
+	border:1px solid #d7d7d7;
+}
+
+.modal-body h6{
+	color: #dda828;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.delete_button{
+	background-color: #dda828;
+	color: white;  
+}
+
+.delete_button:hover {
+	 	background-color: #23272a;
+	 	color: white;
+ }
+
+
+ .filter_bikes{
+ 	margin-bottom: 40px;
+ }
+
+ .filter_bikes div{
+ 	margin-right: 40px;
+ }
+
+ .filter_bikes label{
+	margin-top: 0px;
+	padding-right: 15px;
+ }
+
 #userAvatar{
 	width: 30px;
-	border: 2px solid white;
 }
 
 #prova{

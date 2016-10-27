@@ -295,6 +295,11 @@ footer a:hover{
 
 /*Responsive*/
 
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
 @media (min-width: 768px){
 	.navbar{
 		border-radius: 0px;

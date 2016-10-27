@@ -108,6 +108,7 @@ angular.module("myControllers",['myServices'])
 
 		$rootScope.$on('authEvent', function( e, data ) {
 			$rootScope.user = data;
+			console.log(data);
 		});
 
 		$scope.logIn = AuthService.logIn;

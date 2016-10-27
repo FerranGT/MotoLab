@@ -55,6 +55,7 @@ angular.module('myServices', ["firebase"])
 	          avatar: authData.photoURL,
 	          email: authData.email
 	        });
+	        //console.log(authData);
 	      }
 	      else {
 	        $rootScope.$broadcast("authEvent", null)
@@ -82,4 +83,3 @@ angular.module('myServices', ["firebase"])
 
 
 
-	

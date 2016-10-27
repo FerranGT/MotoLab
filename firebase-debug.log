@@ -3,7 +3,7 @@
 [debug] CLI Version:  3.0.8
 [debug] Platform:     darwin
 [debug] Node Version: v4.6.1
-[debug] Time:         Thu Oct 27 2016 09:35:14 GMT+0200 (CEST)
+[debug] Time:         Thu Oct 27 2016 10:13:55 GMT+0200 (CEST)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
@@ -17,4 +17,4 @@
 [info] i  deploying database, hosting
 [info] ✔  database: rules ready to deploy.
 [info] i  hosting: preparing ./ directory for upload...
-[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/motolab-df5cd/uploads/-KV437UsCiGs42_jQZCM?fileCount=68118&message= 
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/motolab-df5cd/uploads/-KV4BzG1igA4-G26S70q?fileCount=68122&message= 

@@ -87,6 +87,10 @@ angular.module("myControllers",['myServices'])
 
 	.controller("homeController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'home';
+		$rootScope.bikes = motodbservice.bikes;
+		$scope.showBikes = function(){
+			window.location = "#/moto"
+		}
 	})
 
 	.controller("motoController", function($scope, $rootScope, motodbservice) {
@@ -108,6 +112,7 @@ angular.module("myControllers",['myServices'])
 
 		$rootScope.$on('authEvent', function( e, data ) {
 			$rootScope.user = data;
+			console.log(data);
 		});
 
 		$scope.logIn = AuthService.logIn;

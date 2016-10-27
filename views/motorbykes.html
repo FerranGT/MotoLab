@@ -7,18 +7,17 @@
 
 <div class="container">
 	
-	<div class="col-sm-6 col-md-3 show_moto text-center" ng-repeat="bike in bikes">
+	<div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes">
 		
 		<div class="image_moto">
 			<img src="{{ bike.url_img }}" class="image_size img-responsive">
 		</div>
 		<h4>{{ bike.model }}</h4>
 		<h5>{{ bike.price }}</h5>
-		<!-- <p>{{ bike.model }}</p>
-		<p>{{ bike.price }}</p> -->
+		
 
 
-<!-- 		<button ng-click="removeMoto(bike)">Delete</button> -->
+<!-- <button ng-click="removeMoto(bike)">Delete</button> -->
 
 
 		<!-- Button trigger modal -->

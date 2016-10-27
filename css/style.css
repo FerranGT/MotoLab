@@ -240,6 +240,7 @@ footer a:hover{
 
  	.create{
  		background-color: #dda828;
+
  	}
 
 	.create h1{
@@ -359,13 +360,16 @@ footer a:hover{
  }
 
 
+.motos_count{
+	margin-bottom: 50px;
+}
 
-
-
+.show_moto{
+	margin-bottom: 70px;
+}
 
 .image_moto{
 	height: 170px;
-	margin-top: 60px;
 	padding: 5px;
 	border:1px solid #d7d7d7;
 }
@@ -394,8 +398,10 @@ footer a:hover{
 	font-size: 28px;
 	margin-bottom: 10px;
 	margin-top: 5px;
-
 }
+
+
+
 
 .button_info{
 	background-color: #dda828;
@@ -412,17 +418,24 @@ footer a:hover{
 .button_info:hover {
 	 	background-color: #23272a;
 	 	color: white;
-	 }
+ }
 
-	 #progress-container{
-	 	padding-top: 10px;
-	 }
 
-	 #loginbutton{
+
+/*Login button*/
+#progress-container{
+	padding-top: 10px;
+	}
+
+#loginbutton{
 	 	background: transparent;
 	 	color: #dda828;
 	 	border: none;
 	 }
+
+
+
+/*All buttons*/
 
 .btn-primary{
 	border: none;
@@ -431,6 +444,57 @@ footer a:hover{
 .btn-primary:focus, .btn-primary.focus{
 	background-color: #dda828;
 }
+
+
+/*modal window*/
+
+.modal-header{
+	background-color: #23272a;
+	color: white;
+}
+
+.modal-body{
+	padding: 40px;
+}
+
+.modal-body img{
+	width: 500px;
+	padding: 5px;
+	border:1px solid #d7d7d7;
+}
+
+.modal-body h6{
+	color: #dda828;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.delete_button{
+	background-color: #dda828;
+	color: white;  
+}
+
+.delete_button:hover {
+	 	background-color: #23272a;
+	 	color: white;
+ }
+
+
+ .filter_bikes{
+ 	margin-bottom: 40px;
+ }
+
+ .filter_bikes div{
+ 	margin-right: 40px;
+ }
+
+ .filter_bikes label{
+	margin-top: 0px;
+	padding-right: 15px;
+ }
 
 #userAvatar{
 	width: 30px;

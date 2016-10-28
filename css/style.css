@@ -123,6 +123,11 @@ div.main-img{
 
 /*New Arrivals (home)*/
 
+#bike-container-new-arrivals{
+	display: flex;
+
+}
+
 .new-arrivals h2{
 	font-family: Lato;
 	font-weight: 900;
@@ -543,9 +548,10 @@ form label{
     font-size: 16px;
 	}
 
-	#bike-container{
+	#bike-container, #bike-container-new-arrivals{
 		flex-direction: column;
 	}
+
 
 	.show_moto {
 		margin-bottom: 40px;

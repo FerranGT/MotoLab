@@ -59,7 +59,7 @@ div.header-img{
 
 div.main-img{
 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fmoto_1920x1032px.jpg?alt=media&token=bb64e7c6-463e-45ab-8cae-8f20011569df");
-	height: 1032px;
+	height: 886px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -310,6 +310,10 @@ form label{
 #bike-container {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.pointer{
+	cursor: pointer;
 }
 
 .image_moto{

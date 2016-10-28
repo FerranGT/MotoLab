@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900');
 
-/**{
-	border: 1px solid red;
-}*/
+
 
 *{
 	font-family: Lato;
 }
 
 body {
- padding-top: 50px; 
- margin-bottom: 300px;
+	/*padding-top: 50px; */
+	margin-bottom: 300px;
 }
 
 html {
@@ -19,7 +17,6 @@ html {
 	min-height: 100%;
 }
 /*Nav bar*/
-
 
 .corporative-color{
 	color: #dda828;
@@ -42,16 +39,17 @@ a.logo  {
 }
 
 
-/*Home*/
+/*Home.html*/
+
 div.header-img{
-	 	background-image: url(../img/header2_1920x534px.png);
-	 	height: 534px;
-	 	background-repeat: no-repeat;
-	 	background-position: center center;
-	 	background-size: cover;
-	 	margin-top: 0px;
-	 	margin-bottom: 0px;
-	}
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fheader2_1920x534px.png?alt=media&token=01a939b7-99be-4583-8f57-a88d63a9598f");
+	height: 534px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
 .nav-margin{
 	margin-bottom: 0px;
@@ -60,14 +58,14 @@ div.header-img{
 
 
 div.main-img{
-	 	background-image: url(../img/moto_1920x1032px.jpg);
-	 	height: 1032px;
-	 	background-repeat: no-repeat;
-	 	background-position: center center;
-	 	background-size: cover;
-	 	margin-top: 0px;
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fmain_1920x886.jpg?alt=media&token=45e4f73e-43a7-471b-b9ae-277a98ccc0d2");
+	height: 886px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 0px;
 
-	}
+}
 
 
 
@@ -125,6 +123,11 @@ div.main-img{
 
 /*New Arrivals (home)*/
 
+#bike-container-new-arrivals{
+	display: flex;
+
+}
+
 .new-arrivals h2{
 	font-family: Lato;
 	font-weight: 900;
@@ -157,6 +160,7 @@ div.main-img{
 	background-color: #141719;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	margin-top: 60px;
 	position: absolute;
 	bottom: 0;
 	width: 100%
@@ -203,147 +207,367 @@ footer a:hover{
 }
 
 
- .facebook{
+.facebook{
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .facebook:hover{
-  	opacity: 0.5;
+.facebook:hover{
+	opacity: 0.5;
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .twitter{
+.twitter{
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .twitter:hover{
-  	opacity: 0.5;
+.twitter:hover{
+	opacity: 0.5;
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .social li{
-  	padding: 0px;
-  	padding-top: 20px;
-  }
+.social li{
+	padding: 0px;
+	padding-top: 20px;
+}
 
- p.copyright{
-  	font-size: 12px;
-  	color: #6d6d6d;
-  }
+p.copyright{
+	font-size: 12px;
+	color: #6d6d6d;
+}
 
-/*Responsive home*/
+
+
+/*Pag create.html*/
+
+.create{
+	background-color: #dda828;
+
+}
+
+.create h1{
+	font-family: Lato;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	margin: 0px;
+	color: white;
+}
+
+.icon_create{
+	color: white;
+	font-size: 20px;
+	padding-right: 5px;
+
+}
+
+form label{
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.botton_create {
+	background-color: #dda828;
+	margin-top: 20px;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.botton_create:hover {
+	background-color: #23272a;
+	margin-top: 20px;
+	color: white;
+}
+
+
+
+#photoPreview{
+	width: 300px;
+}
+
+#progress-container{
+	padding-top: 10px;
+}
+
+
+
+
+
+.motos_count{
+	margin-bottom: 50px;
+}
+
+
+.show_moto {
+	margin-bottom: 40px;
+	width: 22%;
+	margin-right: 25px;
+}
+
+#bike-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.image_moto{
+	height: 170px;
+	padding: 5px;
+	border:1px solid #d7d7d7;
+}
+
+.image_size{
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	min-width: 100%;
+}
+
+
+.show_moto h4{
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.show_moto h5{
+	color: #dda828;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 25px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.show_moto span{
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 17px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 15px;
+}
+
+
+
+
+.button_info{
+	background-color: #dda828;
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+.button_info:hover {
+	background-color: #23272a;
+	color: white;
+}
+
+
+
+/*Login button*/
+#progress-container{
+	padding-top: 10px;
+}
+
+#loginbutton{
+	background: transparent;
+	color: #dda828;
+	border: none;
+}
+
+
+
+/*All buttons*/
+
+.btn-primary{
+	border: none;
+}
+
+.btn-primary:focus, .btn-primary.focus{
+	background-color: #dda828;
+}
+
+
+/*modal window*/
+
+.modal-header{
+	background-color: #23272a;
+}
+
+.modal-header span{
+	font-size: 17px;
+	font-weight: 900;
+	color: white;
+}
+
+.modal-header h4{
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+}
+
+
+
+.modal-body{
+	padding: 40px;
+}
+
+.modal-body img{
+	width: 500px;
+	padding: 5px;
+	border:1px solid #d7d7d7;
+}
+
+.modal-body h6{
+	color: #dda828;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.delete_button{
+	background-color: #dda828;
+	color: white;  
+}
+
+.delete_button:hover {
+	background-color: #23272a;
+	color: white;
+}
+
+
+.filter_bikes{
+	margin-bottom: 40px;
+}
+
+.filter_bikes div{
+	margin-right: 40px;
+}
+
+.filter_bikes label{
+	margin-top: 0px;
+	padding-right: 15px;
+}
+
+#userAvatar{
+	width: 30px;
+}
+
+
+
+
+/*Responsive*/
+
+
 
 @media (min-width: 768px){
 	.navbar{
 		border-radius: 0px;
 	}
-		.navbar-nav {
-			float:right;
-		}
- }
+	.navbar-nav {
+		float:right;
+	}
+
+}
+
+
 
 @media (max-width: 768px){
 	div.header-img{
 		background-image: none;
 		background-color: #141719;
 		height: auto;
-	    }
+	}
 	
 	div.main-img{
 		background-image: none;
 		height: auto;
 		background-color: #dda828;
 		padding-top: 3 0px;
-	    }
+	}
 
 	.glyphicon{
 		font-size: 40px;
 		color: white;
-		}
+	}
 
 	.info-elements h3{
-		 font-weight: 400;
-		}
+		font-weight: 400;
+	}
 
 	.info-elements{
 		top: 0px;
 		margin-top: 35px;
-		}
+	}
 
 	.footer{
 		text-align: center;
-		}	
+	}	
 
 	.icon-footer, .icon-footer-mail{
 		color: #dda828;
 		font-size: 15px;
 		padding-right: 10px;
-		}	
+	}	
 
 	.footer ul{
 		text-align: center;
 		margin-top: 20px;
 		margin-top: 15px;
 	}
- }
 
-
-
- /*Pag create*/
-
- 	.create{
- 		background-color: #dda828;
- 	}
-
-	.create h1{
-		font-family: Lato;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: 400;
-		padding-top: 20px; 
-		padding-bottom: 20px; 
-		margin: 0px;
-		color: white;
+	.image_moto{
+		height: 500px !important;
 	}
+
 	
-	.icon_create{
-		color: white;
-		font-size: 20px;
-		padding-right: 5px;
 
+	.icon_create {
+    font-size: 16px;
 	}
 
-	 form label{
-	 	font-family: Lato;
-	 	font-size: 16px;
-	 	font-weight: 400;
-	 	margin-bottom: 10px;
-	 	margin-top: 20px;
-	 }
-
-	 .botton_create {
-	 	background-color: #dda828;
-	 	margin-top: 20px;
-	 	color: white;
-	 	margin-bottom: 60px;
-	 }
-
-	 .botton_create:hover {
-	 	background-color: #23272a;
-	 	margin-top: 20px;
-	 	color: white;
-	 }
+	#bike-container, #bike-container-new-arrivals{
+		flex-direction: column;
+	}
 
 
+	.show_moto {
+		margin-bottom: 40px;
+		width: 100%;
+		margin-right: 25px;
+	}
 
-	 #photoPreview{
-	 	width: 300px;
-	 }
+	/*.motos_count{
+		margin-top: 0px;
+	}*/
+}
 
-	 #progress-container{
-	 	padding-top: 10px;
-	 }
+@media (max-width: 500px){
+	.image_moto{
+		height: 230px !important;
+	}
+
+}
+
+

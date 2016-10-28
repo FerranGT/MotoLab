@@ -77,6 +77,8 @@ angular.module("myControllers",['myServices'])
 		    	var pDiv = document.getElementById('photo-container');
 		    	var txtHtml = '<img id="photoPreview" src="'+url+'">';
 		    	pDiv.innerHTML = txtHtml;
+		    	var pDiv = document.getElementById('progress-container');
+		    	pDiv.innerHTML = ""
 		}
 		
 	})
@@ -85,6 +87,11 @@ angular.module("myControllers",['myServices'])
 
 	.controller("homeController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'home';
+		$rootScope.bikes = motodbservice.bikes;
+
+		$scope.showBikes = function(){
+			window.location = "#/moto"
+		}
 	})
 
 	.controller("motoController", function($scope, $rootScope, motodbservice) {
@@ -101,6 +108,23 @@ angular.module("myControllers",['myServices'])
 			//window.location.reload();		
 		}
 
-
-
 	})
+
+	.controller('NavBarCtrl', function($rootScope, $scope, AuthService) {
+
+		$rootScope.$on('authEvent', function( e, data ) {
+			$rootScope.user = data;
+			console.log(data.avatar);
+		});
+
+		$scope.logIn = AuthService.logIn;
+		$scope.logOut = AuthService.logOut;
+	})
+	
+
+
+
+
+
+
+

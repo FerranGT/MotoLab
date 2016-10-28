@@ -8,8 +8,8 @@
 }
 
 body {
- padding-top: 50px; 
- margin-bottom: 300px;
+	/*padding-top: 50px; */
+	margin-bottom: 300px;
 }
 
 html {
@@ -42,14 +42,14 @@ a.logo  {
 /*Home.html*/
 
 div.header-img{
-	 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fheader2_1920x534px.png?alt=media&token=01a939b7-99be-4583-8f57-a88d63a9598f");
-	 	height: 534px;
-	 	background-repeat: no-repeat;
-	 	background-position: center center;
-	 	background-size: cover;
-	 	margin-top: 0px;
-	 	margin-bottom: 0px;
-	}
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fheader2_1920x534px.png?alt=media&token=01a939b7-99be-4583-8f57-a88d63a9598f");
+	height: 534px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
 .nav-margin{
 	margin-bottom: 0px;
@@ -58,14 +58,14 @@ div.header-img{
 
 
 div.main-img{
-	 	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fmoto_1920x1032px.jpg?alt=media&token=bb64e7c6-463e-45ab-8cae-8f20011569df");
-	 	height: 1032px;
-	 	background-repeat: no-repeat;
-	 	background-position: center center;
-	 	background-size: cover;
-	 	margin-top: 0px;
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/motolab-df5cd.appspot.com/o/view_images%2Fmoto_1920x1032px.jpg?alt=media&token=bb64e7c6-463e-45ab-8cae-8f20011569df");
+	height: 1032px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 0px;
 
-	}
+}
 
 
 
@@ -202,95 +202,95 @@ footer a:hover{
 }
 
 
- .facebook{
+.facebook{
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .facebook:hover{
-  	opacity: 0.5;
+.facebook:hover{
+	opacity: 0.5;
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .twitter{
+.twitter{
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .twitter:hover{
-  	opacity: 0.5;
+.twitter:hover{
+	opacity: 0.5;
 	width: 25px;
 	height: auto;
-  }
+}
 
-  .social li{
-  	padding: 0px;
-  	padding-top: 20px;
-  }
+.social li{
+	padding: 0px;
+	padding-top: 20px;
+}
 
- p.copyright{
-  	font-size: 12px;
-  	color: #6d6d6d;
-  }
-
-
-
- /*Pag create.html*/
-
- 	.create{
- 		background-color: #dda828;
-
- 	}
-
-	.create h1{
-		font-family: Lato;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: 400;
-		padding-top: 20px; 
-		padding-bottom: 20px; 
-		margin: 0px;
-		color: white;
-	}
-	
-	.icon_create{
-		color: white;
-		font-size: 20px;
-		padding-right: 5px;
-
-	}
-
-	 form label{
-	 	font-family: Lato;
-	 	font-size: 16px;
-	 	font-weight: 400;
-	 	margin-bottom: 10px;
-	 	margin-top: 20px;
-	 }
-
-	 .botton_create {
-	 	background-color: #dda828;
-	 	margin-top: 20px;
-	 	color: white;
-	 	margin-bottom: 60px;
-	 }
-
-	 .botton_create:hover {
-	 	background-color: #23272a;
-	 	margin-top: 20px;
-	 	color: white;
-	 }
+p.copyright{
+	font-size: 12px;
+	color: #6d6d6d;
+}
 
 
 
-	 #photoPreview{
-	 	width: 300px;
-	 }
+/*Pag create.html*/
 
-	 #progress-container{
-	 	padding-top: 10px;
-	 }
+.create{
+	background-color: #dda828;
+
+}
+
+.create h1{
+	font-family: Lato;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	margin: 0px;
+	color: white;
+}
+
+.icon_create{
+	color: white;
+	font-size: 20px;
+	padding-right: 5px;
+
+}
+
+form label{
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.botton_create {
+	background-color: #dda828;
+	margin-top: 20px;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.botton_create:hover {
+	background-color: #23272a;
+	margin-top: 20px;
+	color: white;
+}
+
+
+
+#photoPreview{
+	width: 300px;
+}
+
+#progress-container{
+	padding-top: 10px;
+}
 
 
 
@@ -300,14 +300,11 @@ footer a:hover{
 	margin-bottom: 50px;
 }
 
-/*.show_moto{
-	margin-bottom: 70px;
-}
-*/
+
 .show_moto {
-    margin-bottom: 40px;
-    width: 22%;
-    margin-right: 25px;
+	margin-bottom: 40px;
+	width: 22%;
+	margin-right: 25px;
 }
 
 #bike-container {
@@ -322,10 +319,10 @@ footer a:hover{
 }
 
 .image_size{
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    min-width: 100%;
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	min-width: 100%;
 }
 
 
@@ -364,30 +361,30 @@ footer a:hover{
 	margin-top: 10px;
 	color: white;
 	font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
 }
 
 .button_info:hover {
-	 	background-color: #23272a;
-	 	color: white;
- }
+	background-color: #23272a;
+	color: white;
+}
 
 
 
 /*Login button*/
 #progress-container{
 	padding-top: 10px;
-	}
+}
 
 #loginbutton{
-	 	background: transparent;
-	 	color: #dda828;
-	 	border: none;
-	 }
+	background: transparent;
+	color: #dda828;
+	border: none;
+}
 
 
 
@@ -434,23 +431,23 @@ footer a:hover{
 }
 
 .delete_button:hover {
-	 	background-color: #23272a;
-	 	color: white;
- }
+	background-color: #23272a;
+	color: white;
+}
 
 
- .filter_bikes{
- 	margin-bottom: 40px;
- }
+.filter_bikes{
+	margin-bottom: 40px;
+}
 
- .filter_bikes div{
- 	margin-right: 40px;
- }
+.filter_bikes div{
+	margin-right: 40px;
+}
 
- .filter_bikes label{
+.filter_bikes label{
 	margin-top: 0px;
 	padding-right: 15px;
- }
+}
 
 #userAvatar{
 	width: 30px;
@@ -467,50 +464,51 @@ footer a:hover{
 	.navbar{
 		border-radius: 0px;
 	}
-		.navbar-nav {
-			float:right;
-		}
- }
+	.navbar-nav {
+		float:right;
+	}
 
- 
+}
+
+
 
 @media (max-width: 768px){
 	div.header-img{
 		background-image: none;
 		background-color: #141719;
 		height: auto;
-	    }
+	}
 	
 	div.main-img{
 		background-image: none;
 		height: auto;
 		background-color: #dda828;
 		padding-top: 3 0px;
-	    }
+	}
 
 	.glyphicon{
-		font-size: 20px;
+		font-size: 40px;
 		color: white;
-		}
+	}
 
 	.info-elements h3{
-		 font-weight: 400;
-		}
+		font-weight: 400;
+	}
 
 	.info-elements{
 		top: 0px;
 		margin-top: 35px;
-		}
+	}
 
 	.footer{
 		text-align: center;
-		}	
+	}	
 
 	.icon-footer, .icon-footer-mail{
 		color: #dda828;
 		font-size: 15px;
 		padding-right: 10px;
-		}	
+	}	
 
 	.footer ul{
 		text-align: center;
@@ -522,26 +520,32 @@ footer a:hover{
 		height: 500px !important;
 	}
 
-	.create{
- 		margin-top: 70px;
- 	}
+	
 
- 	#bike-container{
- 		flex-direction: column;
- 	}
+	.icon_create {
+    font-size: 16px;
+	}
 
- 	.show_moto {
-	    margin-bottom: 40px;
-	    width: 100%;
-	    margin-right: 25px;
+	#bike-container{
+		flex-direction: column;
+	}
+
+	.show_moto {
+		margin-bottom: 40px;
+		width: 100%;
+		margin-right: 25px;
+	}
+
+	/*.motos_count{
+		margin-top: 0px;
+	}*/
 }
- }
 
- @media (max-width: 500px){
+@media (max-width: 500px){
 	.image_moto{
 		height: 230px !important;
 	}
 
- }
+}
 
 

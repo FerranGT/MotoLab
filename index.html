@@ -20,10 +20,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
-<body>
+<body >
 
-<header>
-     <nav class="navbar navbar-inverse navbar nav-margin navbar-fixed-top">
+<header >
+     <nav class="navbar navbar-inverse navbar nav-margin">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -86,9 +86,10 @@
            <ul class="list-inline text-right">
              <li ng-class="{ active: activetab == 'home'}"><a href="#/">Home</a></li>
              <li ng-class="{ active: activetab == 'moto'}"><a href="#/moto">Motorbikes</a></li>
-             <li ng-class="{ active: activetab == 'create'}"><a href="#/create">Create</a></li>
+             <li ng-show="user" ng-class="{ active: activetab == 'create'}"><a href="#/create">Create</a></li>
            </ul>
         </div>
+
 
 
         <div class="col-xs-12 col-md-6">

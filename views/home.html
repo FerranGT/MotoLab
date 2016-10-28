@@ -4,50 +4,57 @@
 		<div class="row">
 			<div class="col-sm-5 col-md-4 banner-elements">
 				<div class="flex">
-				<h1 class="animated fadeInDown">Taller de motos de <span class="corporative-color">confianza </span> desde 1948</h1>
-				<h2>Reparación y venta de motocicletas, especialistas en gran cilindrada.</h2>
+					<h1 class="animated fadeInDown">Taller de motos de <span class="corporative-color">confianza </span> desde 1948</h1>
+					<h2>Reparación y venta de motocicletas, especialistas en gran cilindrada.</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </div> 
 
-	<div class="main-img">
-		<div class="container">
-			<div class="col-md-4 info-elements">
-			    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-				<h3>Reparaciones</h3>
-				<p> En MotoLab contamos con un amplio taller preparado con todos los programas, maquinaria y herramientas necesarias para dejar su moto en perfectas condiciones.</p>
-			</div>
+<div class="main-img">
+	<div class="container">
+		<div class="col-md-4 info-elements">
+			<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+			<h3>Reparaciones</h3>
+			<p> En MotoLab contamos con un amplio taller preparado con todos los programas, maquinaria y herramientas necesarias para dejar su moto en perfectas condiciones.</p>
+		</div>
 
-			<div class="col-md-4 info-elements">
-				<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-				<h3>Confianza</h3>
-				<p>Todo nuestro equipo está formado por profesionales, con más de 20 años de experiencia en el sector.</p>
-			</div>
+		<div class="col-md-4 info-elements">
+			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+			<h3>Confianza</h3>
+			<p>Todo nuestro equipo está formado por profesionales, con más de 20 años de experiencia en el sector. Examinamos y escuchamos las opiniones de nuestros clientes. </p>
+		</div>
 
-			<div class="col-md-4 info-elements">
-				<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-				<h3>Ocasión</h3>
-				<p>En nuestra exposición encontrará toda la gama de motocicletas de segunda mano a los mejores precios. Siempre con nuestra garantía.</p>
-				
-			</div>
+		<div class="col-md-4 info-elements">
+			<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+			<h3>Ocasión</h3>
+			<p>En nuestra exposición encontrará toda la gama de motocicletas de segunda mano a los mejores precios. Siempre con nuestra garantía.</p>
+			
 		</div>
 	</div>
+</div>
 
 
 <div class="new-arrivals">
 	<div class="container">
 		<h2 class="text-center"><span class="corporative-color">New</span> Arrivals</h2>
 
-		<div ng-click="showBikes()" class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes | limitTo: -4">			
-			<div class="image_moto" >
-				<img src="{{ bike.url_img }}" class="image_size img-responsive">
+
+		<div id="bike-container">
+			<div ng-click="showBikes()" class="show_moto text-center" ng-repeat="bike in bikes | limitTo: -4">
+				
+				<div class="image_moto" >
+					<img src="{{ bike.url_img }}" class="image_size img-responsive">
+				</div>
+
+				<h4><span> {{ bike.brand }} </span> {{ bike.model }}</h4>
+				<h5>{{ bike.price }} €</h5>
 			</div>
-			<h4>{{ bike.brand }}</h4>
-			<h4>{{ bike.model }}</h4>
-			<h5>{{ bike.price }} €</h5>
 		</div>
+
+
+
 <!-- 		<div class="col-md-3 text-center">
 			<img src="../img/moto1.jpg" class="img-responsive">
 			<h4>SYM Symphony 125 SR</h4>

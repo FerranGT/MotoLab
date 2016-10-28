@@ -88,6 +88,7 @@ angular.module("myControllers",['myServices'])
 	.controller("homeController", function($scope, $rootScope, motodbservice) {
 		$rootScope.activetab = 'home';
 		$rootScope.bikes = motodbservice.bikes;
+
 		$scope.showBikes = function(){
 			window.location = "#/moto"
 		}

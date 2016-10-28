@@ -8,10 +8,10 @@ angular.module("myControllers",['myServices'])
     	var storageService = firebase.storage();
 		
 		// realizamos la autenticación anónima (debe estar activada en la consola de Firebase)
-		authService.signInAnonymously()
-		.catch(function(error) {
-			console.error('Detectado error de autenticación', error);
-		});
+		// authService.signInAnonymously()
+		// .catch(function(error) {
+		// 	console.error('Detectado error de autenticación', error);
+		// });
 		// asociamos el manejador de eventos sobre el INPUT FILE
 		document.getElementById('fileRoute').addEventListener('change', function(evento){
 			evento.preventDefault();

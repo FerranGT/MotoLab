@@ -1,7 +1,7 @@
 
 <div class="create motos_count">
 	<div class="container">
-		<h1> {{ bikes.length }} motos disponibles</h1>
+		<h1> {{ results.length }} de {{ bikes.length }} motos disponibles</h1>
 	</div>
 </div>
 
@@ -27,7 +27,7 @@
 <!-- <div class="row"> -->
 	
 	<!-- <div class="col-xs-12 col-sm-3 col-md-3 show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }"> -->
-	<div class="show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel }">
+	<div class="show_moto text-center" ng-repeat="bike in bikes | filter: { brand : queryBrand, model : queryModel } as results">
 		
 		<div class="image_moto" >
 			<img src="{{ bike.url_img }}" class="image_size img-responsive">

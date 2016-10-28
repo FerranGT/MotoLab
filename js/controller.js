@@ -107,6 +107,16 @@ angular.module("myControllers",['myServices'])
 			})				
 			//window.location.reload();		
 		}
+
+		$scope.remaining = function() {
+			var count = 0;
+			
+			angular.forEach($rootScope.bikes, function(bike) {
+				console.log(bike);
+				count += bike.done ? 0 : 1;
+			});
+			return count;
+		};
 	})
 
 	.controller('NavBarCtrl', function($rootScope, $scope, AuthService) {

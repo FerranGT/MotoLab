@@ -8,10 +8,10 @@ angular.module("myControllers",['myServices'])
     	var storageService = firebase.storage();
 		
 		// realizamos la autenticación anónima (debe estar activada en la consola de Firebase)
-		authService.signInAnonymously()
-		.catch(function(error) {
-			console.error('Detectado error de autenticación', error);
-		});
+		// authService.signInAnonymously()
+		// .catch(function(error) {
+		// 	console.error('Detectado error de autenticación', error);
+		// });
 		// asociamos el manejador de eventos sobre el INPUT FILE
 		document.getElementById('fileRoute').addEventListener('change', function(evento){
 			evento.preventDefault();
@@ -108,15 +108,6 @@ angular.module("myControllers",['myServices'])
 			//window.location.reload();		
 		}
 
-		$scope.remaining = function() {
-			var count = 0;
-			
-			angular.forEach($rootScope.bikes, function(bike) {
-				console.log(bike);
-				count += bike.done ? 0 : 1;
-			});
-			return count;
-		};
 	})
 
 	.controller('NavBarCtrl', function($rootScope, $scope, AuthService) {
